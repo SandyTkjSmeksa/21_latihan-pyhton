@@ -1,34 +1,6 @@
-import math
+from kalkulator_bangun import *
+from logika_bilangan import *
 
-# === FUNGSI MATEMATIKA & LOGIKA ===
-def hitung_luas_bujursangkar(sisi):
-    return sisi * sisi
-
-def hitung_keliling_bujursangkar(sisi):
-    return 4 * sisi
-
-def cek_prima(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(math.isqrt(n)) + 1):
-        if n % i == 0:
-            return False
-    return True
-
-def cek_paritas(x):
-    if x % 2 == 0:
-        return "Bilangan Genap"
-    else:
-        return "Bilangan Ganjil"
-
-def luas_lingkaran_custom(r):
-    return 3.14 * r * r
-
-def luas_segitiga_custom(alas, tinggi):
-    return 0.5 * alas * tinggi
-
-
-# === MENU UTAMA ===
 while True:
     print("\n========================================")
     print("   MODUL MATEMATIKA & LOGIKA PYTHON    ")
